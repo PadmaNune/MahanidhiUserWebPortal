@@ -1,0 +1,8 @@
+<h2>Add City</h2>
+<form (ngSubmit)="addBadge()">
+    <label for="name">Name: </label>
+    <input id="name" [(ngModel)]="badge.Name" ngMode name="name" />
+    <label for="ThumnailImagePath">Thumnail: </label>
+    <input id="ThumnailImagePath" [(ngModel)]="badge.ThumnailImagePath" ngModel name="ThumnailImagePath" />
+    <button type="submit">Add Badge</button>
+</form>

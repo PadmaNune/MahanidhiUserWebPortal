@@ -1,0 +1,13 @@
+<h2>Add City</h2>
+<form (ngSubmit)="addCountry()">
+  <label for="name">Name: </label>
+  <input id="name" [(ngModel)]="countries.name" ngMode name="name" />
+  <label for="">Code</label>
+  <input id="stateId" type="number" [(ngModel)]="countries.code" ngModel name="code" />
+
+  <label for="gpsLocation">CurrencyCode: </label>
+  <input id="gpsLocation" [(ngModel)]="countries.currencyCode" ngModel name="currencyCode
+  " />
+
+  <button type="submit">Add City</button>
+</form>

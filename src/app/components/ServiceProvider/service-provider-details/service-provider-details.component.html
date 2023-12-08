@@ -1,0 +1,13 @@
+<h2>Review</h2>
+<form (ngSubmit)="addReview()">
+    <label for="name">ReviewTitle: </label>
+    <input id="name" [(ngModel)]="review.ReviewTitle" ngMode name="ReviewTitle" />
+
+    <label for="">Rating</label>
+    <input id="Rating" type="number" [(ngModel)]="review.Rating" ngModel name="Rating" />
+
+    <label for="ReviewDescription">ReviewDescription: </label>
+    <input id="ReviewDescription" [(ngModel)]="review.ReviewDescription" ngModel name="ReviewDescription" />
+ 
+    <button type="submit">Add Review</button>
+</form>
